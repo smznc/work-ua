@@ -1,0 +1,33 @@
+version: '3.1'
+
+services:
+
+  wordpress:
+    image: wordpress
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_HOST: mysql
+      WORDPRESS_DB_USER: mysql
+      WORDPRESS_DB_PASSWORD: mysql
+      WORDPRESS_DB_NAME: wp
+    volumes:
+      - wordpress:/var/www/html
+      - ./src/config/docker-php-ext-bcmath.ini:/usr/local/etc/php/conf.d/docker-php-ext-bcmath.ini
+      - ./src/work-ua:/var/www/html/wp-content/themes/work-ua
+
+  mysql:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: wp
+      MYSQL_USER: mysql
+      MYSQL_PASSWORD: mysql
+      MYSQL_ROOT_PASSWORD: mysql
+    volumes:
+      - db:/var/lib/mysql
+
+volumes:
+  wordpress:
+  db:
