@@ -1,0 +1,25 @@
+.wu-input {
+    padding: 0.375rem 0.75rem;
+    width: 100%;
+    background-color: transparent;
+    color: black;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 4rem;
+    position: relative;
+    outline: none;
+
+    &::placeholder {
+        font: inherit;
+        color: inherit;
+        opacity: 0.5;
+    }
+
+    &:focus {
+        outline: 1px solid black;
+    }
+
+    &--size-2 {
+        padding: 0.75rem 0.75rem;
+    }
+}

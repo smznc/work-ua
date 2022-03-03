@@ -1,0 +1,26 @@
+.wu-search {
+    min-height: 100vh;
+    background-color: mix($pumpkin, white, 10%);
+    display: flex;
+    align-items: center;
+
+    &__description {
+        margin-bottom: 3rem;
+    }
+
+    &__form {
+        margin: -0.25rem;
+        width: 100%;
+        display: flex;
+    }
+
+    &__input {
+        margin: 0.25rem;
+    }
+
+    &__submit {
+        margin: 0.25rem;
+        flex-shrink: 0;
+        min-width: 10rem;
+    }
+}
