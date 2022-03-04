@@ -14,6 +14,7 @@ services:
       WORDPRESS_DB_NAME: wp
     volumes:
       - wordpress:/var/www/html
+      - ./src/plugins:/var/www/html/wp-content/plugins
       - ./src/config/docker-php-ext-bcmath.ini:/usr/local/etc/php/conf.d/docker-php-ext-bcmath.ini
       - ./src/work-ua:/var/www/html/wp-content/themes/work-ua
 

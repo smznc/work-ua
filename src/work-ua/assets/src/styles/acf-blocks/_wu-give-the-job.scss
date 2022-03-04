@@ -1,0 +1,36 @@
+.wu-give-the-job {
+    min-height: 100vh;
+    padding: 2rem 0;
+    background-color: mix($yellow_green, white, 20%);
+
+    &__form {
+        padding: 2rem 0;
+    }
+
+    &__row {
+        display: flex;
+        margin: 0 -0.5rem;
+    }
+
+    &__col {
+        padding: 0 0.5rem;
+        width: 50%;
+    }
+
+    &__label {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+    }
+
+    &__input {
+        margin-bottom: 1rem;
+    }
+
+    &__textarea {
+        margin-bottom: 1rem;
+    }
+
+    &__select {
+        margin-bottom: 1rem;
+    }
+}

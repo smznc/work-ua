@@ -1,0 +1,17 @@
+.wu-textarea {
+    padding: 0.375rem 0.75rem;
+    width: 100%;
+    background-color: transparent;
+    color: black;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    position: relative;
+    outline: none;
+    resize: none;
+    height: 20rem;
+
+    &:focus {
+        outline: 1px solid black;
+    }
+}

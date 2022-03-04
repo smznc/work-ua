@@ -2,7 +2,33 @@
     min-height: 100vh;
     background-color: mix($pumpkin, white, 10%);
     display: flex;
-    align-items: center;
+    flex-direction: column;
+
+    &__header {
+        background: white
+    }
+
+    &__header-inner {
+        padding: 1rem 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &__emblem {
+        margin-right: auto;
+        font-size: 2.5rem;
+    }
+
+    &__give-the-job {
+        margin-left: 1rem;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+    }
 
     &__description {
         margin-bottom: 3rem;
